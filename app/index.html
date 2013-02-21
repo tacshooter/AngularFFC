@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" ng-app="ffc">
+<head>
+	<meta charset="utf-8">
+	<title>Funds for Causes</title>
+	<link rel="stylesheet" href="css/app.css"/>
+
+	<!-- Meta Tags -->
+	<meta name="description" content="Funds for Causes - Online Community Fundraising" />
+	<meta name="keywords" content="Funds for Causes, Fundraising, Community" />
+	<meta name="author" content="Funds for Causes" />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+	<!-- Links -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Mako' rel='stylesheet' type='text/css'/>
+
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/lib/jackbox/css/jackbox.css" />
+	<link rel="stylesheet" type="text/css" href="/css/jb_fws.css" media="all" />
+	<link href="/css/redmond/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/lib/jcountdown/jcountdown.css"/>
+
+	<link rel="stylesheet" type="text/css" href="/css/web.css"/>
+</head>
+<body>
+	<!-- include the nav bar -->
+	<div ng-include src="'/partials/header_nav.html'"></div>
+
+	<!-- Main view div -->
+	<div ng-view></div>
+
+	<!-- footer template include -->
+	<div ng-controller="MyCtrl1" ng-include src="template.url"></div>
+	
+
+	<!-- In production use:
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+	-->
+	<script src="lib/angular/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/directives.js"></script>
+
+	<!-- Scripts-->
+	<script type="text/javascript" src="/lib/custom/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="/lib/custom/jquery-ui-1.9.2.custom.min.js"></script>
+	<script type="text/javascript" src="/lib/custom/jquery-ui-timepicker-addon.js"></script>
+	<script type="text/javascript" src="/lib/custom/jb_fws.js"></script>
+	<script type="text/javascript" src="/lib/jackbox/js/libs/jquery.address-1.5.min.js"></script>
+	<script type="text/javascript" src="/lib/jackbox/js/libs/Jacked.js"></script>
+	<script type="text/javascript" src="/lib/jackbox/js/jackbox-swipe.js"></script>
+	<script type="text/javascript" src="/lib/jackbox/js/jackbox.js"></script>
+	<script type="text/javascript" src="/lib/custom/customSelect.jquery.min.js"></script>
+	<script type="text/javascript" src="/lib/jcountdown/jquery.jcountdown.min.js"></script> 
+	<script type="text/javascript" src="/lib/custom/jquery.knob.js"></script>
+	<script type="text/javascript" src="/lib/custom/jHtmlArea-0.7.5.min.js"></script>
+	<script type="text/javascript" src="/lib/custom/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+<div id="top_navbar">
+	<ul>
+		<!-- The active pages anchor tag should have an id of "active" -->
+		<li><a href="index.cfm">Home</a></li>
+		<li><a href="upcoming.cfm">Upcoming Events</a></li>
+		<li><a href="#">How it Works</a></li>
+		<li><a href="networking.cfm">Networking</a></li>
+		<li><a href="#">Raise Money Through Us</a></li>
+		<li><a href="sponsors.cfm">Sponsors</a></li>
+		<!-- 
+		For login / create account link
+		data-group              = The group/category, this is mandatory even for a single item
+		data-thumbnail          = Optional thumbnail to be used, original thumbnail will be used if this attribute is ommited.  
+		If tag is ommited and no original thumbnail exists either, if the item's JackBox content is an image, 
+		the large version of the image will be used and scaled.
+		If none of these options are available, the "default thumbnail" jpg will be used.
+		data-thumbTooltip       = Specify a lightbox thumb tooltip, otherwise it will be taken automatically from the title                       
+		data-title              = Optional item title, accepts text of html 
+		data-description        = Optional description, enter the id of the element where JackBox should grab the html/text from 
+		data-scaleUp            = JackBox will always scale images down if necessary. Setting this attribute to true will scale the content up as well
+		data-width              = Override the default width (only applicable when content is not an image) 
+		data-height             = Override the default height (only applicable when content is not an image)
+		data-flashHasPriority   = Applies to local video player, true = Flash w/ mobile backup, false = HTML5 with Flash backup 
+		data-poster             = Applies to local video, will be shown for mobile devices that don't support autoplay (when we can't grab the first frame of the video) 
+		data-autoplay           = Applies to video and audio
+		data-audiotitle         = The audio player song title
+		href/data-href          = the content to be loaded inside JackBox 
+
+		-->
+
+		<li><a class="jackbox" data-group="text_link"  data-title="Login" data-width="400" href="#login">Login or Create Account</a></li>
+
+	</ul>
+
+	<ul class="jackbox-hidden-items">
+
+		<!-- for hidden items, "data-href" is used instead of the regular "href" attribute that regular links use like above 
+		There is a pair of these for every unique link to a page... every unique link gets a login and register lightbox. Register is hidden -->
+		<li class="jackbox" data-group="text_link" data-title="Create Account" data-width="700" data-href="#register"></li>
+		<li class="jackbox" data-group="text_link2" data-title="Create Account" data-width="700" data-href="#register"></li>
+		<li class="jackbox" data-group="text_link3" data-title="Create Account" data-width="700" data-href="#register"></li>
+		<li class="jackbox" data-group="text_link4" data-title="Create Account" data-width="700" data-href="#register"></li>
+		<li class="jackbox" data-group="text_link5" data-title="Create Account" data-width="700" data-href="#register"></li>
+		<li class="jackbox" data-group="text_link6" data-title="Create Account" data-width="700" data-href="#register"></li>
+
+	</ul>
+</div>
